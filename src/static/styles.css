@@ -1,3 +1,28 @@
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-name {
+  flex: 1;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  color: #c62828;
+  border-radius: 3px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.delete-participant:hover {
+  background: #ffebee;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -158,10 +183,14 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
   margin-bottom: 0;
   color: #333;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .no-participants {
